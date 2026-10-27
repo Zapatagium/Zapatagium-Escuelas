@@ -1,19 +1,23 @@
-const registroPage = {
-  form: document.getElementById("form-registro"),
-  clave: document.getElementById("clave"),
-  clave2: document.getElementById("clave2"),
-
-  iniciar: function () {
-    registroPage.form.onsubmit = function () {
-      if (registroPage.clave.value !== registroPage.clave2.value) {
-        alert("Las contraseñas no coinciden");
-        return false;
-      }
-      
-      location.href = "03-iniciar-sesion.html";
-      return false;
-    };
+class RegistroPage {
+  constructor() {
+    this.form = document.getElementById("form-registro");
+    this.clave = document.getElementById("clave");
+    this.clave2 = document.getElementById("clave2");
   }
-};
 
-registroPage.iniciar();
+  iniciar() {
+    const pagina = this;
+
+    this.form.addEventListener("submit", function() {
+      if (pagina.clave.value !== pagina.clave2.value) {
+        alert("Las contraseñas no coinciden");
+        return;
+      }
+
+      location.href = "03-iniciar-sesion.html";
+    });
+  }
+}
+
+const registro = new RegistroPage();
+registro.iniciar();
