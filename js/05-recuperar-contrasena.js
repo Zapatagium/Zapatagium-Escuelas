@@ -3,11 +3,10 @@ class RecuperarContra {
     this.form = document.getElementById("form-recuperar");
   }
 
-  enviar() {
-    alert("Te enviamos un correo con las instrucciones");
-    location.href = "03-iniciar-sesion.html";
-    return false;
+  iniciar() {
+    this.form.addEventListener("submit", function() {
+      alert("Te enviamos un correo con las instrucciones");
+      location.href = "03-iniciar-sesion.html";
+    });
   }
 }
-
-const recuperar = new RecuperarContra();
