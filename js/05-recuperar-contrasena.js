@@ -1,13 +1,17 @@
-const recuperarPage = {
-  form: document.getElementById("form-recuperar"),
+class RecuperarPage {
+  constructor() {
+    this.form = document.getElementById("form-recuperar");
+  }
 
-  iniciar: function () {
-    recuperarPage.form.onsubmit = function () {
+  iniciar() {
+    this.form.onsubmit = function () {
       alert("Te enviamos un correo con las instrucciones");
       location.href = "03-iniciar-sesion.html";
       return false;
     };
   }
-};
+}
 
-recuperarPage.iniciar();
+// Creamos la instancia y la ponemos en marcha
+const recuperar = new RecuperarPage();
+recuperar.iniciar();
