@@ -11,7 +11,5 @@ class RecuperarPage {
     };
   }
 }
-
-// Creamos la instancia y la ponemos en marcha
 const recuperar = new RecuperarPage();
 recuperar.iniciar();
