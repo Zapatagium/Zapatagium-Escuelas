@@ -1,15 +1,13 @@
-class RecuperarPage {
+class RecuperarContra {
   constructor() {
     this.form = document.getElementById("form-recuperar");
   }
 
-  iniciar() {
-    this.form.onsubmit = function () {
-      alert("Te enviamos un correo con las instrucciones");
-      location.href = "03-iniciar-sesion.html";
-      return false;
-    };
+  enviar() {
+    alert("Te enviamos un correo con las instrucciones");
+    location.href = "03-iniciar-sesion.html";
+    return false;
   }
 }
-const recuperar = new RecuperarPage();
-recuperar.iniciar();
+
+const recuperar = new RecuperarContra();
