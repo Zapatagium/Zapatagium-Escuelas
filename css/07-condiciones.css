@@ -1,0 +1,13 @@
+.actualizacion {
+  color: #6B7280;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.tarjeta h2 {
+  margin-top: 24px; /* separa cada sección de la anterior */
+}
+
+.tarjeta p {
+  line-height: 1.7; /* más aire entre renglones para leer mejor */
+}

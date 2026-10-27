@@ -1,0 +1,12 @@
+.tarjeta-formulario {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 44px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between; /* uno a cada lado */
+  gap: 16px;
+  margin-top: 12px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar perfil | Zapatagium</title>
+  <link rel="stylesheet" href="../css/comun.css">
+  <link rel="stylesheet" href="../css/23-editar-perfil.css">
+</head>
+<body>
+  <!-- barra de navegación -->
+  <div class="navbar">
+    <a href="01-inicio.html" class="logo-circulo">Z</a>
+    <div class="menu">
+      <a href="01-inicio.html" class="activo">Inicio</a>
+      <a href="08-notas.html">Notas</a>
+      <a href="11-mensajes.html">Mensajes</a>
+      <a href="14-asistencia.html">Asistencia</a>
+      <a href="17-tareas.html">Tareas</a>
+    </div>
+    <div class="usuario">
+      <a href="24-notificaciones.html" class="campana">Avisos</a>
+      <a href="22-perfil-alumno.html" class="avatar" title="Mi perfil">LM</a>
+    </div>
+  </div>
+
+  <div class="banda-titulo">
+    <h1>Editar perfil</h1>
+  </div>
+
+  <div class="contenedor">
+    <a href="22-perfil-alumno.html" class="enlace-volver js-volver">← Volver a Perfil</a>
+
+    <div class="tarjeta tarjeta-formulario">
+      <div class="foto-fila">
+        <div class="foto-perfil">LM</div>
+        <button type="button" class="boton boton-borde" id="boton-foto">Cambiar foto</button>
+      </div>
+
+      <form id="form-editar">
+        <div class="dos-columnas">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" value="Lucía">
+          <span class="mensaje-error"></span>
+        </div>
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" value="Martínez">
+          <span class="mensaje-error"></span>
+        </div>
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" value="lucia.martinez@gmail.com">
+          <span class="mensaje-error"></span>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" value="261 555-0147">
+          <span class="mensaje-error"></span>
+        </div>
+        </div>
+        <div class="campo">
+          <label for="domicilio">Domicilio</label>
+          <input type="text" id="domicilio" value="Godoy Cruz, Mendoza">
+          <span class="mensaje-error"></span>
+        </div>
+
+        <div class="botones">
+          <a href="22-perfil-alumno.html" class="boton boton-borde">Cancelar</a>
+          <button type="submit" class="boton">Guardar cambios</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- pie de página -->
+  <div class="footer">
+    <p class="footer-marca">ZAPATAGIUM</p>
+    <div class="footer-columnas">
+      <div>
+        <h3>SERVICIO AL CLIENTE</h3>
+        <p>Email: zapatagium@gmail.com</p>
+        <p>Tel.:261902902922</p>
+      </div>
+      <div>
+        <h3>POLÍTICA</h3>
+        <a href="06-terminos.html">Nuestros términos</a>
+        <a href="07-condiciones.html">Nuestras condiciones</a>
+      </div>
+      <div>
+        <h3>REDES SOCIALES</h3>
+        <a>Instagram</a>
+        <a>Facebook</a>
+      </div>
+      <div>
+        <h3>OTROS</h3>
+        <a>Suscripción</a>
+        <a href="02-sobre-nosotros.html">Acerca de nosotros</a>
+      </div>
+    </div>
+    <p class="derechos"><span id="anio">2026</span> / Todos los derechos reservados</p>
+  </div>
+
+  <script src="../js/comun.js"></script>
+  <script src="../js/23-editar-perfil.js"></script>
+</body>
+</html>

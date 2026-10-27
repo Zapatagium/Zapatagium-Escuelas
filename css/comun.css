@@ -1,0 +1,345 @@
+/* estilos que usan todas las paginas */
+
+/* reinicio */
+* {
+  box-sizing: border-box; /* el padding no agranda las cajas */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #111827;
+  background: #fff;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit; /* los links heredan el color del texto */
+  text-decoration: none; /* sin subrayado */
+}
+
+/* navbar */
+.navbar {
+  display: flex; /* ponemos todo en una fila */
+  justify-content: space-between; /* logo a la izquierda, usuario a la derecha */
+  align-items: flex-start;
+  padding: 0 40px;
+}
+
+.logo-circulo {
+  margin-top: 16px;
+  width: 56px;
+  height: 56px;
+  border: 4px solid #6B7A4F;
+  border-radius: 50%; /* círculo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+  color: #6B7A4F;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-top: none;
+  border-radius: 0 0 28px 28px; /* solo se redondea abajo */
+  padding: 18px 40px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.menu a {
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+.menu a:hover,
+.menu a.activo { /* el link de la página actual */
+  border-bottom-color: #8F9B72;
+}
+
+.usuario {
+  margin-top: 16px;
+  width: 120px; /* mismo ancho que el logo para centrar el menú */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+}
+
+.campana {
+  position: relative;
+  color: #4F6038;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  background: #D9D9D9;
+  color: #6B7280;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* banda del título */
+.banda-titulo {
+  background: #DDE8C0;
+  margin-top: 28px;
+  padding: 6px 40px 6px 90px;
+}
+
+.banda-titulo h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+/* contenedor */
+.contenedor {
+  max-width: 1300px;
+  margin: 40px auto 0 auto; /* centrado */
+  padding: 0 20px;
+}
+
+/* tarjetas */
+.tarjeta {
+  background: #E8F4E6;
+  border-radius: 20px;
+  padding: 36px;
+}
+
+.tarjeta h2 {
+  color: #4F6038;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.tarjeta p {
+  margin-bottom: 12px;
+}
+
+.enlace-volver {
+  display: inline-block;
+  font-weight: 700;
+  color: #4F6038;
+  margin-bottom: 24px;
+}
+
+/* botones */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #8F9B72;
+  color: #fff;
+  border: 2px solid #8F9B72;
+  border-radius: 999px; /* bien redondeado */
+  padding: 14px 32px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #6B7A4F;
+  border-color: #6B7A4F;
+}
+
+.boton-borde { /* botón blanco con borde */
+  background: #fff;
+  color: #4F6038;
+}
+
+.boton-borde:hover {
+  background: #DDE8C0;
+  border-color: #8F9B72;
+}
+
+.boton-peligro { /* botón rojo (cerrar sesión) */
+  background: #fff;
+  color: #B83A3A;
+  border-color: #B83A3A;
+}
+
+.boton-peligro:hover {
+  background: #F8DADA;
+  border-color: #B83A3A;
+}
+
+.boton-ancho {
+  width: 100%;
+}
+
+/* formularios */
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  color: #4F6038;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #C9D3B6;
+  border-radius: 14px;
+  font-size: 17px;
+  font-family: inherit;
+  background: #fff;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #6B7A4F;
+}
+
+.campo.error input,
+.campo.error select,
+.campo.error textarea { /* cuando el JS marca un error */
+  border-color: #B83A3A;
+}
+
+.mensaje-error {
+  display: block;
+  color: #B83A3A;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.fila-opciones { /* "Recordarme" + "¿Olvidaste...?" */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+/* etiquetas de estado */
+.chip {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.chip-ok     { background: #DCEFD3;   color: #4F8A3C; }
+.chip-alerta { background: #FBEFCB;  color: #B7791F; }
+.chip-error  { background: #F8DADA;   color: #B83A3A; }
+.chip-gris   { background: #E5E7EB;         color: #6B7280; }
+.chip-verde  { background: #DDE8C0;         color: #4F6038; }
+
+/* tablas */
+.tabla-scroll {
+  overflow-x: auto; /* en el celu la tabla se desliza */
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 18px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th {
+  background: #DDE8C0;
+  color: #4F6038;
+  text-align: left;
+  padding: 16px 24px;
+}
+
+.tabla td {
+  padding: 20px 24px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.tabla td:first-child {
+  font-weight: 700;
+}
+
+.nota.baja { /* notas bajas en rojo (lo pinta el JS) */
+  color: #B83A3A;
+  font-weight: 700;
+}
+
+/* aviso */
+.aviso {
+  position: fixed; /* queda fijo en la pantalla */
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* lo centra */
+  background: #3E4F2A;
+  color: #fff;
+  padding: 16px 28px;
+  border-radius: 14px;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.aviso.error {
+  background: #7A2E2E;
+}
+
+/* footer */
+.footer {
+  background: #8F9B72;
+  color: #fff;
+  padding: 50px 40px 24px 40px;
+  margin-top: 80px;
+}
+
+.footer-marca {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columnas iguales */
+  gap: 20px;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.footer a {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.derechos {
+  text-align: right;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 40px;
+}

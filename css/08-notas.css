@@ -1,0 +1,32 @@
+.tabla-notas {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.tabla-notas th {
+  background: #DDE8C0;
+  text-align: left;
+  font-size: 22px;
+  padding: 18px;
+}
+
+.tabla-notas td {
+  padding: 18px;
+  border-top: 1px solid #E5E7EB;
+  font-size: 18px;
+}
+
+.pildora {
+  display: block;
+  background: #DDE8C0;
+  border-radius: 30px;
+  padding: 12px 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pildora:hover {
+  background: #8F9B72;
+  color: white;
+}

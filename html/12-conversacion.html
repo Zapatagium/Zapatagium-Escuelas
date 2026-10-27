@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversación | Zapatagium</title>
+  <link rel="stylesheet" href="../css/comun.css">
+  <link rel="stylesheet" href="../css/12-conversacion.css">
+</head>
+<body>
+  <!-- barra de navegación -->
+  <div class="navbar">
+    <a href="01-inicio.html" class="logo-circulo">Z</a>
+    <div class="menu">
+      <a href="01-inicio.html">Inicio</a>
+      <a href="08-notas.html">Notas</a>
+      <a href="11-mensajes.html" class="activo">Mensajes</a>
+      <a href="14-asistencia.html">Asistencia</a>
+      <a href="17-tareas.html">Tareas</a>
+    </div>
+    <div class="usuario">
+      <a href="24-notificaciones.html" class="campana">Avisos</a>
+      <a href="22-perfil-alumno.html" class="avatar" title="Mi perfil">LM</a>
+    </div>
+  </div>
+
+  <div class="banda-titulo">
+    <h1>Mensajes</h1>
+  </div>
+
+  <div class="contenedor">
+    <a href="11-mensajes.html" class="enlace-volver">← Volver a Mensajes</a>
+
+    <div class="cabecera-chat">
+      <div class="foto"></div>
+      <div>
+        <h2>Profesor/a: Ramírez</h2>
+        <p>Matemática · En línea</p>
+      </div>
+    </div>
+
+    <div class="caja-chat">
+      <div class="lista-chat" id="lista-chat">
+        <div class="burbuja recibida">Hola Lucía, ¿pudiste resolver los ejercicios de la guía 3?<span class="hora">09:12</span></div>
+        <div class="burbuja enviada">Hola profe, sí, pero me quedó una duda con el ejercicio 5.<span class="hora">09:20</span></div>
+        <div class="burbuja recibida">Sin problema, mañana lo repasamos en clase. Recordá traer la calculadora para el examen del viernes.<span class="hora">10:42</span></div>
+        <div class="burbuja enviada">Perfecto, muchas gracias.<span class="hora">10:45</span></div>
+      </div>
+
+      <form class="escribir" id="form-chat">
+        <input type="text" id="texto-mensaje" placeholder="Escribí un mensaje…">
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- pie de página -->
+  <div class="footer">
+    <p class="footer-marca">ZAPATAGIUM</p>
+    <div class="footer-columnas">
+      <div>
+        <h3>SERVICIO AL CLIENTE</h3>
+        <p>Email: zapatagium@gmail.com</p>
+        <p>Tel.:261902902922</p>
+      </div>
+      <div>
+        <h3>POLÍTICA</h3>
+        <a href="06-terminos.html">Nuestros términos</a>
+        <a href="07-condiciones.html">Nuestras condiciones</a>
+      </div>
+      <div>
+        <h3>REDES SOCIALES</h3>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div>
+        <h3>OTROS</h3>
+        <a href="#">Suscripción</a>
+        <a href="02-sobre-nosotros.html">Acerca de nosotros</a>
+      </div>
+    </div>
+    <p class="derechos"><span id="anio">2026</span> / Todos los derechos reservados</p>
+  </div>
+
+  <script src="../js/comun.js"></script>
+  <script src="../js/12-conversacion.js"></script>
+</body>
+</html>

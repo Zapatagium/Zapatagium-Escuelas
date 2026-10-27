@@ -1,0 +1,72 @@
+.pestanas {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.pestana {
+  background: #fff;
+  color: #4F6038;
+  border: 1.5px solid #C9D3B6;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.pestana.activa {
+  background: #8F9B72;
+  color: #fff;
+  border-color: #8F9B72;
+}
+
+.notificacion {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 18px;
+  padding: 22px 28px;
+  margin-bottom: 14px;
+}
+
+.notificacion.no-leida { /* las no leídas tienen fondo verde */
+  background: #E8F4E6;
+  border-color: #E8F4E6;
+}
+
+.notif-icono {
+  width: 56px;
+  height: 56px;
+  background: #DDE8C0;
+  color: #4F6038;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif-texto {
+  flex: 1;
+}
+
+.notif-texto h3 {
+  color: #4F6038;
+  font-size: 19px;
+}
+
+.notif-texto p {
+  color: #6B7280;
+}
+
+.notif-hora {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.boton-marcar {
+  margin-top: 24px;
+}

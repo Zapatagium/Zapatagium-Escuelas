@@ -1,0 +1,117 @@
+.bloque-estadisticas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.caja-estadistica {
+  background: #E8F4E6;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.caja-estadistica p {
+  color: #6B7280;
+  margin: 0 0 10px 0;
+}
+
+.caja-estadistica strong {
+  font-size: 36px;
+  color: #4F6038;
+}
+
+.texto-verde { color: #4F8A3C; }
+.texto-rojo { color: #B83A3A; }
+.texto-naranja { color: #B7791F; }
+
+/* Calendario */
+.calendario {
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.calendario h2 {
+  color: #4F6038;
+  margin-bottom: 20px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.nombre-dia {
+  text-align: center;
+  font-weight: 700;
+  color: #6B7280;
+}
+
+.dia {
+  min-height: 80px;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #E5E7EB;
+  cursor: pointer;
+}
+
+.dia strong {
+  display: block;
+  font-size: 16px;
+}
+
+.dia span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dia.vacio,
+.dia.futuro {
+  cursor: default;
+}
+
+.dia.vacio {
+  border: none;
+}
+
+.dia.presente {
+  background: #DCEFD3;
+  color: #4F8A3C;
+  border-color: #DCEFD3;
+}
+
+.dia.ausente {
+  background: #F8DADA;
+  color: #B83A3A;
+  border-color: #F8DADA;
+}
+
+.dia.tardanza {
+  background: #FBEFCB;
+  color: #B7791F;
+  border-color: #FBEFCB;
+}
+
+.dia.feriado {
+  background: #E5E7EB;
+  color: #6B7280;
+  border-color: #E5E7EB;
+}
+
+.dia.hoy {
+  border: 2px solid #6B7A4F;
+}
+
+.leyenda {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificaciones | Zapatagium</title>
+  <link rel="stylesheet" href="../css/comun.css">
+  <link rel="stylesheet" href="../css/24-notificaciones.css">
+</head>
+<body>
+  <!-- barra de navegación -->
+  <div class="navbar">
+    <a href="01-inicio.html" class="logo-circulo">Z</a>
+    <div class="menu">
+      <a href="01-inicio.html">Inicio</a>
+      <a href="08-notas.html">Notas</a>
+      <a href="11-mensajes.html">Mensajes</a>
+      <a href="14-asistencia.html">Asistencia</a>
+      <a href="17-tareas.html">Tareas</a>
+    </div>
+    <div class="usuario">
+      <a href="24-notificaciones.html" class="campana">Avisos</a>
+      <a href="22-perfil-alumno.html" class="avatar" title="Mi perfil">LM</a>
+    </div>
+  </div>
+
+  <div class="banda-titulo">
+    <h1>Notificaciones</h1>
+  </div>
+
+  <div class="contenedor">
+    <div class="pestanas">
+      <button type="button" class="pestana activa" id="btn-todas">Todas</button>
+      <button type="button" class="pestana" id="btn-noleidas">No leídas (<span id="contador">2</span>)</button>
+    </div>
+
+    <div class="lista-notif">
+      <div class="notificacion no-leida">
+        <div class="notif-icono"></div>
+        <div class="notif-texto"><h3>Nueva nota en Matemática</h3><p>Examen Unidad 3: 9</p></div>
+        <span class="notif-hora">Hace 2 h</span>
+      </div>
+      <div class="notificacion no-leida">
+        <div class="notif-icono"></div>
+        <div class="notif-texto"><h3>Mensaje de Prof. Sosa</h3><p>Muy buen trabajo en la exposición oral.</p></div>
+        <span class="notif-hora">Hoy</span>
+      </div>
+      <div class="notificacion">
+        <div class="notif-icono"></div>
+        <div class="notif-texto"><h3>Tarea por vencer</h3><p>Guía de ejercicios 4 vence mañana.</p></div>
+        <span class="notif-hora">Ayer</span>
+      </div>
+      <div class="notificacion">
+        <div class="notif-icono"></div>
+        <div class="notif-texto"><h3>Inasistencia registrada</h3><p>08/10/2026 · Sin justificar</p></div>
+        <span class="notif-hora">08/10</span>
+      </div>
+      <div class="notificacion">
+        <div class="notif-icono"></div>
+        <div class="notif-texto"><h3>Boletín disponible</h3><p>Ya podés ver tu boletín del Periodo 2.</p></div>
+        <span class="notif-hora">05/10</span>
+      </div>
+    </div>
+
+    <button type="button" class="boton boton-borde boton-marcar" id="boton-marcar">Marcar todas como leídas</button>
+  </div>
+
+  <!-- pie de página -->
+  <div class="footer">
+    <p class="footer-marca">ZAPATAGIUM</p>
+    <div class="footer-columnas">
+      <div>
+        <h3>SERVICIO AL CLIENTE</h3>
+        <p>Email: zapatagium@gmail.com</p>
+        <p>Tel.:261902902922</p>
+      </div>
+      <div>
+        <h3>POLÍTICA</h3>
+        <a href="06-terminos.html">Nuestros términos</a>
+        <a href="07-condiciones.html">Nuestras condiciones</a>
+      </div>
+      <div>
+        <h3>REDES SOCIALES</h3>
+        <a>Instagram</a>
+        <a>Facebook</a>
+      </div>
+      <div>
+        <h3>OTROS</h3>
+        <a>Suscripción</a>
+        <a href="02-sobre-nosotros.html">Acerca de nosotros</a>
+      </div>
+    </div>
+    <p class="derechos"><span id="anio">2026</span> / Todos los derechos reservados</p>
+  </div>
+
+  <script src="../js/comun.js"></script>
+  <script src="../js/24-notificaciones.js"></script>
+</body>
+</html>

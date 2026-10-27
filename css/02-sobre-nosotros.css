@@ -1,0 +1,25 @@
+.funciones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.funcion {
+  background: #E8F4E6;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.funcion-icono {
+  width: 50px;
+  height: 50px;
+  background: #8F9B72;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.funcion h3 {
+  color: #4F6038;
+  margin-bottom: 6px;
+}

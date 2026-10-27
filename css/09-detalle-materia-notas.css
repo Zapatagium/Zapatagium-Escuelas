@@ -1,0 +1,31 @@
+.detalle {
+  display: grid;
+  grid-template-columns: 380px 1fr; /* tarjeta fija + tabla que ocupa el resto */
+  gap: 40px;
+  align-items: start;
+}
+
+.docente {
+  color: #6B7280;
+}
+
+.etiqueta {
+  color: #6B7280;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.promedio-grande {
+  font-size: 110px;
+  font-weight: 800;
+  color: #6B7A4F;
+  line-height: 1;
+  margin: 8px 0 24px 0;
+}
+
+.fila-periodo {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid #CFE0CC;
+}

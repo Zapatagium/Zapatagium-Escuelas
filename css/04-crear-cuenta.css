@@ -1,0 +1,5 @@
+.tarjeta-centrada { max-width: 760px; margin: 0 auto; padding: 40px; }
+.dos-columnas { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+input { border-radius: 25px; padding: 10px 15px; border: 1px solid #d1d5db; background: rgba(255, 255, 255, 0.6); }
+.enlace { color: #4F6038; font-weight: bold; }
+.pie-tarjeta { text-align: center; margin-top: 20px; color: #6B7280; }

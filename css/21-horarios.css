@@ -1,0 +1,54 @@
+.tabla-horarios {
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  color: #4F6038;
+}
+
+.hora-col {
+  font-weight: bold;
+  color: #6B7280;
+  text-align: left;
+}
+
+.modulo {
+  display: block;
+  padding: 12px 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #4F6038;
+}
+
+.mat { background: #DDE8C0; }
+.prog { background: #CBD6B3; }
+.len { background: #E8F4E6; }
+.ing { background: #F3EAD0; }
+
+.recreo td {
+  background: #F3F4F6;
+  color: #6B7280;
+  font-weight: bold;
+}
+
+th.hoy {
+  background: #8F9B72;
+  color: white;
+}
+
+.corto {
+  display: none;
+}

@@ -1,0 +1,37 @@
+.detalle-tarea {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.tarjeta h3 {
+  color: #4F6038;
+  margin: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+.archivo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+}
+
+.archivo span {
+  color: #6B7280;
+}
+
+.entrega {
+  background: #DDE8C0;
+}
+
+.nota-chica {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #6B7280;
+}

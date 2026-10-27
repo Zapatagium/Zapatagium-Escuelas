@@ -1,0 +1,37 @@
+.tarjeta-formulario {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.foto-fila {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.foto-perfil {
+  width: 90px;
+  height: 90px;
+  background: #D9D9D9;
+  color: #6B7280;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.dos-columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}

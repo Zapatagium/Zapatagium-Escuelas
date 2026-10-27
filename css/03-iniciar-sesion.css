@@ -1,0 +1,21 @@
+.tarjeta-centrada {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 44px;
+}
+
+.subtitulo {
+  color: #6B7280;
+  margin-bottom: 28px;
+}
+
+.enlace {
+  color: #4F6038;
+  font-weight: 700;
+}
+
+.pie-tarjeta {
+  text-align: center;
+  margin-top: 28px;
+  color: #6B7280;
+}

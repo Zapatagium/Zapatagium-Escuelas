@@ -1,0 +1,29 @@
+.justificar {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+  align-items: start;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.plazos {
+  background: #DDE8C0;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.plazos h2 {
+  color: #4F6038;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.plazos p {
+  margin-bottom: 12px;
+  color: #333;
+}

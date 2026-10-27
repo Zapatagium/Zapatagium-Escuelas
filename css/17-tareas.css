@@ -1,0 +1,65 @@
+.pestanas {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.pestana {
+  background: white;
+  color: #4F6038;
+  border: 2px solid #C9D3B6;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pestana.activa {
+  background: #8F9B72;
+  color: white;
+  border-color: #8F9B72;
+}
+
+.lista-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tarea {
+  width: 48%;
+  background: #E8F4E6;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tarea-icono {
+  width: 50px;
+  height: 50px;
+  background: #8F9B72;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.tarea-datos {
+  flex: 1;
+}
+
+.tarea h3 {
+  color: #4F6038;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.fecha {
+  margin-top: 5px;
+}
+
+.tarea .boton {
+  width: 100%;
+  margin-top: 15px;
+}
